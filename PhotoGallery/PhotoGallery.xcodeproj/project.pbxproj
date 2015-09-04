@@ -39,6 +39,8 @@
 		C002B71F1B8B12B20062B550 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C002B71E1B8B12B20062B550 /* Default.png */; };
 		C8FC30BD1B9980AC00E95BDC /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC30BC1B9980AC00E95BDC /* ListView.m */; };
 		C8FC30C01B9980C900E95BDC /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC30BF1B9980C900E95BDC /* PreviewView.m */; };
+		C8FC30C41B99857100E95BDC /* CustomCellCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC30C31B99857100E95BDC /* CustomCellCategory.m */; };
+		C8FC30C81B99893200E95BDC /* NetworkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC30C71B99893200E95BDC /* NetworkClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,10 @@
 		C8FC30BC1B9980AC00E95BDC /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		C8FC30BE1B9980C900E95BDC /* PreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
 		C8FC30BF1B9980C900E95BDC /* PreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
+		C8FC30C21B99857100E95BDC /* CustomCellCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellCategory.h; sourceTree = "<group>"; };
+		C8FC30C31B99857100E95BDC /* CustomCellCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellCategory.m; sourceTree = "<group>"; };
+		C8FC30C61B99893200E95BDC /* NetworkClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClass.h; sourceTree = "<group>"; };
+		C8FC30C71B99893200E95BDC /* NetworkClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		C002B6AE1B8B0FF50062B550 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				C8FC30C51B99890D00E95BDC /* NetworkLayer */,
 				C8FC30BA1B99809500E95BDC /* View */,
 				C002B6B31B8B0FF50062B550 /* AppDelegate.h */,
 				C002B6B41B8B0FF50062B550 /* AppDelegate.m */,
@@ -280,12 +287,31 @@
 		C8FC30BA1B99809500E95BDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C8FC30C11B99852600E95BDC /* CustomCell */,
 				C8FC30BB1B9980AC00E95BDC /* ListView.h */,
 				C8FC30BC1B9980AC00E95BDC /* ListView.m */,
 				C8FC30BE1B9980C900E95BDC /* PreviewView.h */,
 				C8FC30BF1B9980C900E95BDC /* PreviewView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C8FC30C11B99852600E95BDC /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				C8FC30C21B99857100E95BDC /* CustomCellCategory.h */,
+				C8FC30C31B99857100E95BDC /* CustomCellCategory.m */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		C8FC30C51B99890D00E95BDC /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C8FC30C61B99893200E95BDC /* NetworkClass.h */,
+				C8FC30C71B99893200E95BDC /* NetworkClass.m */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,12 +421,14 @@
 				C002B7191B8B11700062B550 /* UIButton+AFNetworking.m in Sources */,
 				C002B71B1B8B11700062B550 /* UIProgressView+AFNetworking.m in Sources */,
 				C002B7091B8B11700062B550 /* AFHTTPRequestOperationManager.m in Sources */,
+				C8FC30C81B99893200E95BDC /* NetworkClass.m in Sources */,
 				C002B70B1B8B11700062B550 /* AFNetworkReachabilityManager.m in Sources */,
 				C002B7181B8B11700062B550 /* UIAlertView+AFNetworking.m in Sources */,
 				C002B70F1B8B11700062B550 /* AFURLResponseSerialization.m in Sources */,
 				C002B7141B8B11700062B550 /* SBJsonParser.m in Sources */,
 				C002B70D1B8B11700062B550 /* AFURLConnectionOperation.m in Sources */,
 				C002B71A1B8B11700062B550 /* UIImageView+AFNetworking.m in Sources */,
+				C8FC30C41B99857100E95BDC /* CustomCellCategory.m in Sources */,
 				C002B70C1B8B11700062B550 /* AFSecurityPolicy.m in Sources */,
 				C002B7171B8B11700062B550 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C002B7161B8B11700062B550 /* AFNetworkActivityIndicatorManager.m in Sources */,

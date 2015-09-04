@@ -8,8 +8,10 @@
 
 #import "ListView.h"
 
-@interface ListView ()
-
+@interface ListView ()<UITableViewDataSource, UITableViewDelegate>
+{
+    IBOutlet UITableView *tableViewList;
+}
 @end
 
 @implementation ListView
@@ -21,5 +23,32 @@
     // Drawing code
 }
 */
+
+-(void)updateInformation
+{
+    [tableViewList reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+//  cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
+
 
 @end

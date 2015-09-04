@@ -1,5 +1,5 @@
 //
-//  ListView.h
+//  CustomCellCategory.h
 //  PhotoGallery
 //
 //  Created by it197 on 9/4/15.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListView : UIView
+@interface CustomCellCategory : UITableViewCell
 
--(void)updateInformation;
+@property(nonatomic, strong) UILabel *labelCategoryName;
+
 
 @end
