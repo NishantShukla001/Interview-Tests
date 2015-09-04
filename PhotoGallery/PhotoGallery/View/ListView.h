@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ListView : UIView
+{
+    NSDictionary *dictListView;
+}
 
--(void)updateInformation;
+//-(void)setDictForListView:(NSDictionary*)dictList;
+
+-(void)updateInformation:(NSDictionary*)dictList;
 
 @end

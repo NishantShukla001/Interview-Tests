@@ -45,7 +45,7 @@
 {
     dictCategoryData = dictNetworkData;
     // we can reload table view here
-    
+    [listView updateInformation:dictCategoryData];
 }
 
 - (void)didReceiveMemoryWarning {

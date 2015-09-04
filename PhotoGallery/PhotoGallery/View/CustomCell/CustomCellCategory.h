@@ -10,7 +10,7 @@
 
 @interface CustomCellCategory : UITableViewCell
 
-@property(nonatomic, strong) UILabel *labelCategoryName;
+@property(nonatomic, strong) UICollectionView *collectionView;
 
 
 @end

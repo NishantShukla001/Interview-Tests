@@ -10,6 +10,8 @@
 
 @implementation CustomCellCategory
 
+@synthesize collectionView;
+
 - (void)awakeFromNib {
     // Initialization code
 }
@@ -18,6 +20,10 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setCollectionData:(NSArray *)collectionData {
+    [self.collectionView setCollectionData:collectionData];
 }
 
 @end
