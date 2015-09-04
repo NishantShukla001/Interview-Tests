@@ -7,9 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "ListView.h"
+#import "PreviewView.h"
 
 @interface ViewController ()
-
+{
+   IBOutlet PreviewView *previewView;
+   IBOutlet ListView    *listView;
+}
 @end
 
 @implementation ViewController
@@ -17,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [previewView setImageInImageView:[UIImage imageNamed:@"Default.png"]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
